@@ -22,7 +22,7 @@ public class Application {
                             BankAccountRepository bankAccountRepository) {
         return args -> {
             Customer customer = new Customer();
-            customer.setId(Math.abs(new Random().nextLong())); // ✅
+            customer.setId(Math.abs(new Random().nextLong()));
             customer.setName("Jean Dupont");
             customer.setEmail("jean@gmail.com");
             customerRepository.save(customer);
@@ -30,7 +30,7 @@ public class Application {
             Random random = new Random();
 
             CurrentAccount currentAccount = new CurrentAccount();
-            currentAccount.setId(Math.abs(random.nextLong())); // ✅ ici
+            currentAccount.setId(Math.abs(random.nextLong()));
 
             currentAccount.setBalance(5000);
             currentAccount.setCreatedAt(new Date());
@@ -41,7 +41,7 @@ public class Application {
             bankAccountRepository.save(currentAccount);
 
             SavingAccount savingAccount = new SavingAccount();
-            savingAccount.setId(Math.abs(random.nextLong())); // ✅
+            savingAccount.setId(Math.abs(random.nextLong()));
 
             savingAccount.setBalance(10000);
             savingAccount.setCreatedAt(new Date());
