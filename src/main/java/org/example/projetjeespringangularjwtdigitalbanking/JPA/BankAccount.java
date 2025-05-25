@@ -30,11 +30,5 @@ public abstract class BankAccount {
     @OneToMany(mappedBy = "bankAccount")
     private List<Operation> operations;
 
-    public void setId(Long id) {
-        this.id = String.valueOf(id);
-    }
 
-    public Long getId() {
-        return Long.valueOf(id);
-    }
 }

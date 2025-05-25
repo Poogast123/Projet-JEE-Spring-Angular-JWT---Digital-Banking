@@ -22,11 +22,5 @@ public class Customer {
     @OneToMany(mappedBy = "customer")
     private List<BankAccount> bankAccounts;
 
-    public void setId(Long id) {
-        this.id = String.valueOf(id);
-    }
 
-    public Long getId() {
-        return Long.valueOf(id);
-    }
 }

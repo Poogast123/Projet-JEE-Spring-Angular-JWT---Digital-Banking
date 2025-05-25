@@ -24,12 +24,7 @@ public class Operation {
     @ManyToOne
     private BankAccount bankAccount;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 
-    public Long getId() {
-        return id;
-    }
+
 }
 

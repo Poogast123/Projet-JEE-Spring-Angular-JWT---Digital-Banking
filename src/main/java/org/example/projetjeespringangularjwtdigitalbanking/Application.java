@@ -22,16 +22,13 @@ public class Application {
                             BankAccountRepository bankAccountRepository) {
         return args -> {
             Customer customer = new Customer();
-            customer.setId(Math.abs(new Random().nextLong()));
+            customer.setId(UUID.randomUUID().toString()); // id en String
             customer.setName("Jean Dupont");
             customer.setEmail("jean@gmail.com");
             customerRepository.save(customer);
 
-            Random random = new Random();
-
             CurrentAccount currentAccount = new CurrentAccount();
-            currentAccount.setId(Math.abs(random.nextLong()));
-
+            currentAccount.setId(UUID.randomUUID().toString()); // id en String
             currentAccount.setBalance(5000);
             currentAccount.setCreatedAt(new Date());
             currentAccount.setStatus(AccountStatus.CREATED);
@@ -41,8 +38,7 @@ public class Application {
             bankAccountRepository.save(currentAccount);
 
             SavingAccount savingAccount = new SavingAccount();
-            savingAccount.setId(Math.abs(random.nextLong()));
-
+            savingAccount.setId(UUID.randomUUID().toString()); // id en String
             savingAccount.setBalance(10000);
             savingAccount.setCreatedAt(new Date());
             savingAccount.setStatus(AccountStatus.CREATED);
@@ -52,4 +48,5 @@ public class Application {
             bankAccountRepository.save(savingAccount);
         };
     }
+
 }
