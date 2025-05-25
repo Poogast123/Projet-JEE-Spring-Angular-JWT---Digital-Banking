@@ -75,6 +75,14 @@ Objets utilisés pour transférer les données entre les couches :
 Exposition des endpoints API :
 ![img_8.png](img_8.png)
 
+### 8. Testing Web Services (with Spring Boot Test and MockMvc)
+
+![img_9.png](img_9.png)
+![img_10.png](img_10.png)
+
+
+
+
 
 
 

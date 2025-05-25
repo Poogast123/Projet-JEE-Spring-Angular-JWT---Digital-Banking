@@ -50,4 +50,20 @@ public class CustomerServiceImpl implements CustomerService {
         }
         customerRepository.deleteById(id);
     }
+    @Override
+    public List<CustomerDTO> getAllCustomers() {
+        List<Customer> customers = customerRepository.findAll();
+        return customers.stream()
+                .map(this::convertToDTO)
+                .collect(Collectors.toList());
+    }
+
+    private CustomerDTO convertToDTO(Customer customer) {
+        CustomerDTO dto = new CustomerDTO();
+        dto.setId(customer.getId());
+        dto.setName(customer.getName());
+        dto.setEmail(customer.getEmail());
+        // Set other fields as needed
+        return dto;
+    }
 }
