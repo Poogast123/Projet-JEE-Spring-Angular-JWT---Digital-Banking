@@ -66,5 +66,19 @@ Implémentation de la logique métier :
 ![img_4.png](img_4.png)
 ![img_5.png](img_5.png)
 
+### 6. DTOs (Data Transfer Objects)
+Objets utilisés pour transférer les données entre les couches :
+![img_6.png](img_6.png)
+![img_7.png](img_7.png)
+
+### 7. Contrôleurs REST
+Exposition des endpoints API :
+![img_8.png](img_8.png)
+
+
+
+
+
+
 
 
