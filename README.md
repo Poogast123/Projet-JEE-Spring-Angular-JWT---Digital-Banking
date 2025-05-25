@@ -61,3 +61,10 @@ La couche DAO a été testée en :
 ![img_2.png](img_2.png)
 ![img_3.png](img_3.png)
 
+### 5. Couche Service
+Implémentation de la logique métier :
+![img_4.png](img_4.png)
+![img_5.png](img_5.png)
+
+
+
